@@ -36,3 +36,10 @@ Status: Downloaded newer image for docker:18.05.0-ce
 failed to copy files: failed to copy file: Container ID 100999 cannot be mapped to a host ID
 ```
 
+Executing in my host the following command gives
+```sh
+$ docker run --rm docker:18.05.0-ce sh -c "ls -la /usr/local/bin/docker" 
+-rwxr-xr-x    1 root     1000      37736758 May  9 22:21 /usr/local/bin/docker
+```
+
+
