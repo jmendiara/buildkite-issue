@@ -1,0 +1,7 @@
+steps:
+  - command: |
+     docker build -t buildkite-issue .
+     docker run -ti --rm buildkite-issue docker version
+
+    agents:
+      queue: borrame
